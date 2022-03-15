@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group />
+    <item
+        android:id="@+id/item_Registro"
+        android:icon="@drawable/ic_registro"
+        android:title="registro"
+        android:titleCondensed="com.example.mytallerdomingo.Registro de revision" />
+
+    <item android:title="Busqueda"
+        android:id="@+id/item_Busqueda"
+        android:icon="@drawable/ic_busqueda"/>
+
+    <item android:title="Modificacion de revision"
+        android:id="@+id/item_Revision"
+        android:icon="@drawable/ic_revision"/>
+
+    <item android:title="Eliminacion de revision"
+        android:id="@+id/item_Eliminacion"
+        android:icon="@drawable/ic_eliminacion"/>
+
+</menu>

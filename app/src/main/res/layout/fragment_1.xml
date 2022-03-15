@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:textColor="@color/teal_700"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="-0dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Ingrese Codigo Unico"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnFecha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="40dp"
+                android:onClick="mostrarFecha"
+                android:text="Fecha" />
+
+            <Button
+                android:id="@+id/btnHora1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Hora" />
+
+            <EditText
+                android:id="@+id/txtFecha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="-105dp"
+                android:ems="10"
+                android:hint="Ingrese Fecha"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtHora1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Ingrese hora"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtPatente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Ingrese Patente"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Bueno" />
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Malo" />
+
+            <Button
+                android:id="@+id/btnDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-78dp"
+                android:ems="12"
+                android:text="Sistema Direccion"
+
+                />
+
+
+            <CheckBox
+                android:id="@+id/check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Bueno" />
+
+            <CheckBox
+                android:id="@+id/check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Malo" />
+
+            <Button
+                android:id="@+id/btnFreno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Frenos"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:text="Bueno" />
+
+            <CheckBox
+                android:id="@+id/check6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnNeumaticos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Neumaticos y LLantas"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="Bueno" />
+
+            <CheckBox
+                android:id="@+id/check8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnSuspension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-75dp"
+                android:ems="12"
+                android:text="Suspension"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkAline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Bueno" />
+
+            <CheckBox
+                android:id="@+id/checkAline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnAlineacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Alineacion"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="Bueno"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/check10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnKit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Kit de Seguridad"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="CheckBox"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/check12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="CheckBox" />
+
+
+            <Button
+                android:id="@+id/button780000988"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Cinturones de Seguridad"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="Bueno"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/check14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Defectuosos" />
+
+
+            <Button
+                android:id="@+id/btnLuces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Luces"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="Bueno"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/check16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnPuertas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Puertas"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="Bueno"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/check18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnVidrios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Vidrios">
+
+            </Button>
+
+            <CheckBox
+                android:id="@+id/check19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="Bueno"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/check20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnTuboEscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Tubo de Escape"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="Bueno"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/check22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Defectuoso" />
+
+
+            <Button
+                android:id="@+id/btnGases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Gases"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox150000000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:minHeight="32dp"
+                android:text="CheckBox"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/checkBox13000000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="CheckBox" />
+
+
+            <Button
+                android:id="@+id/button7800000900000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:ems="12"
+                android:text="Button"
+
+                />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btnBuscar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
